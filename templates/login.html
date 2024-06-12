@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="/static/css/main.css" rel="stylesheet">
+    <style>
+        /* You can add custom styles here if needed */
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-white">
+    <div class="w-1/4 h-2/7 bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-semibold text-center mb-8">Welcome to PromptMaster</h1>
+
+        <form method="post" action="/login" class="space-y-4">
+            <div>
+                <input type="text" name="username" placeholder="Username" class="w-full border border-gray-300 px-3 py-5 rounded-md focus:outline-none focus:border-indigo-500">
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password" class="w-full border border-gray-300 px-3 py-5 rounded-md focus:outline-none focus:border-indigo-500">
+            </div>
+            <div>
+                <button type="submit" class="w-full  text-2xl bg-login-100 text-white font-semibold py-5 px-4 rounded-md">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Include your JavaScript files -->
+    <script src="script.js"></script>
+</body>
+</html>
